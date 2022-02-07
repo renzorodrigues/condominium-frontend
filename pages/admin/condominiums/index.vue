@@ -65,7 +65,8 @@ export default {
         this.$nuxt.$loading.start()
       })
       axios
-        .get('http://localhost:5000/api/Condominium')
+        // .get('http://localhost:5000/api/Condominium')
+        .get('https://renzo-condo.herokuapp.com/api/Condominium')
         .then((response) => {
           response.data.data.forEach((element) => {
             this.condominiums.push(element)
