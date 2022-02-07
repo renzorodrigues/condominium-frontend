@@ -168,7 +168,8 @@ export default {
       this.$store.dispatch('showLockedAction', true)
       axios
         .get(
-          'http://localhost:5000/api/Unit/' +
+          // 'http://localhost:5000/api/Unit/' +
+          'https://renzo-condo.herokuapp.com/api/Unit/' +
             blockId +
             '/' +
             pageNumber +

@@ -171,7 +171,8 @@ export default {
       this.$v.$touch()
       this.$nuxt.$loading.start()
       await axios
-        .post('http://localhost:5000/api/Condominium', {
+        // .post('http://localhost:5000/api/Condominium', {
+        .post('https://renzo-condo.herokuapp.com/api/Condominium', {
           name: this.condominiumName,
           address: {
             publicPlace: this.publicPlace,

@@ -87,7 +87,8 @@ export default {
   methods: {
     getCondominiumById() {
       axios
-        .get('http://localhost:5000/api/Condominium/' + this.$route.params.id)
+        // .get('http://localhost:5000/api/Condominium/' + this.$route.params.id)
+        .get('https://renzo-condo.herokuapp.com/api/Condominium/' + this.$route.params.id)
         .then((response) => {
           this.condominium = response.data.data
         })
